@@ -12,7 +12,6 @@ export default defineConfig({
          formats: ['es', 'cjs'],
          fileName: (format, entryName) => `${format}/${entryName}.js`,
       },
-      sourcemap: true,
    },
    test: {
       include: ['src/**/*.spec.ts'],

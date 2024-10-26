@@ -23,8 +23,11 @@
       "strict": true,
       "forceConsistentCasingInFileNames": true
    },
+   "include": [
+      "src/**/*.ts",
+   ],
    "exclude": [
       "**/*.spec.ts",
-      "**/*.test.ts"
+      "**/*.test.ts",
    ],
 }
