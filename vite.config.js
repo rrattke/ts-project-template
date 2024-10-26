@@ -12,7 +12,6 @@ export default defineConfig({
          formats: ['es', 'cjs'],
          fileName: (format, entryName) => `${format}/${entryName}.js`,
       },
-      outDir: 'lib',
       sourcemap: true,
    },
    test: {
@@ -30,7 +29,7 @@ export default defineConfig({
       },
    },
    plugins: [
-      dts({ outDir: 'lib/types' }),
+      dts({ outDir: 'dist/types' }),
       checker({ typescript: true }),
    ],
 })

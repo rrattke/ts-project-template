@@ -12,7 +12,7 @@
       /* Bundler mode */
       "moduleResolution": "Bundler",
       "declaration": true,
-      "outDir": "./lib",
+      "outDir": "./dist",
       "rootDir": "./src",
       "allowImportingTsExtensions": true,
       "isolatedModules": true,
