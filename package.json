@@ -18,6 +18,7 @@
     "build:dev": "vite build --sourcemap",
     "test": "vitest",
     "coverage": "vitest run --coverage",
+    "prepublishOnly": "npm run build",
     "prepack": "clean-package",
     "postpack": "clean-package restore"
   },
