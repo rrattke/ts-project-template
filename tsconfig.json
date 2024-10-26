@@ -1,0 +1,30 @@
+{
+   "compilerOptions": {
+      "target": "ES2022",
+      "useDefineForClassFields": true,
+      "module": "ES2022",
+      "lib": [
+         "ES2022",
+      ],
+      "skipLibCheck": true,
+      "baseUrl": "./src",
+
+      /* Bundler mode */
+      "moduleResolution": "Bundler",
+      "declaration": true,
+      "outDir": "./lib",
+      "rootDir": "./src",
+      "allowImportingTsExtensions": true,
+      "isolatedModules": true,
+      "moduleDetection": "force",
+      "noEmit": true,
+
+      /* Linting */
+      "strict": true,
+      "forceConsistentCasingInFileNames": true
+   },
+   "exclude": [
+      "**/*.spec.ts",
+      "**/*.test.ts"
+   ],
+}

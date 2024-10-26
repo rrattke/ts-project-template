@@ -1,0 +1,20 @@
+{
+  "editor.defaultFormatter": "vscode.json-language-features",
+  "[typescript][javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "eslint.enable": true,
+  "eslint.format.enable": true,
+  "eslint.useFlatConfig": true,
+  "eslint.rules.customizations": [
+    {
+      "rule": "@stylistic/*",
+      "fixable": true,
+      "severity": "info"
+    }
+  ],
+  "json.format.keepLines": true,
+  "diffEditor.codeLens": true,
+  "editor.tabSize": 3,
+  "editor.detectIndentation": true,
+}
