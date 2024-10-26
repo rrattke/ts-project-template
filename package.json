@@ -13,11 +13,12 @@
     }
   },
   "scripts": {
-    "dev": "vite",
+    "watch": "vite",
     "build": "vite build",
-    "build:dev": "vite build --sourcemap",
-    "test": "vitest",
-    "coverage": "vitest run --coverage",
+    "build:debug": "vite build --sourcemap",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "test:coverage": "vitest run --coverage",
     "prepublishOnly": "npm run build",
     "prepack": "clean-package",
     "postpack": "clean-package restore"
