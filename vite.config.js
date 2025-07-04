@@ -8,6 +8,7 @@ export default defineConfig({
          entry: [
             'src/index.ts',
          ],
+         outDir: 'lib',
          name: 'ts-project-template',
          formats: ['es', 'cjs'],
          fileName: (format, entryName) => `${format}/${entryName}.js`,
@@ -28,7 +29,7 @@ export default defineConfig({
       },
    },
    plugins: [
-      dts({ outDir: 'dist/types' }),
+      dts({ outDir: 'lib/types' }),
       checker({ typescript: true }),
    ],
 })

@@ -3,15 +3,20 @@
   "version": "1.0.0-preview.1",
   "type": "module",
   "files": [
-    "dist"
+    "lib"
   ],
   "main": "./dist/cjs/index.js",
   "module": "./dist/es/index.js",
   "exports": {
-    "./*": {
-      "import": "./dist/es/*.js",
-      "require": "./dist/cjs/*.js",
-      "types": "./dist/types/*.d.ts"
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "import": "./lib/es/index.js",
+      "require": "./lib/cjs/index.js"
+    },
+    "./*.js": {
+      "types": "./lib/types/*.d.ts",
+      "import": "./lib/es/index.js",
+      "require": "./lib/cjs/index.js"
     }
   },
   "scripts": {
